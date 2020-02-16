@@ -1,0 +1,6 @@
+---
+r1:
+  username: admin
+  password: admin
+  platform: hp_comware
+  hostname: 192.168.56.101

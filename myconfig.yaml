@@ -1,0 +1,7 @@
+---
+inventory:
+  # 这里选择对应的插件
+  plugin: nornir.plugins.inventory.ansible.AnsibleInventory
+  options:
+    hostsfile: "hosts"
+  

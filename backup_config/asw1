@@ -1,0 +1,155 @@
+#
+ version 7.1.075, Alpha 7571
+#
+ sysname H3C
+#
+ clock timezone BeiJing add 08:00:00
+ clock protocol ntp
+#
+ system-working-mode standard
+ xbar load-single
+ password-recovery enable
+ lpu-type f-series
+#
+vlan 1
+#
+interface Serial1/0
+#
+interface Serial2/0
+#
+interface Serial3/0
+#
+interface Serial4/0
+#
+interface NULL0
+#
+interface GigabitEthernet0/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet0/1
+ port link-mode route
+ combo enable copper
+ ip address 192.168.56.101 255.255.255.0
+#
+interface GigabitEthernet0/2
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet5/1
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/0
+ port link-mode route
+ combo enable copper
+#
+interface GigabitEthernet6/1
+ port link-mode route
+ combo enable copper
+#
+ scheduler logfile size 16
+#
+line class aux
+ user-role network-operator
+#
+line class console
+ user-role network-admin
+#
+line class tty
+ user-role network-operator
+#
+line class vty
+ user-role network-operator
+#
+line aux 0
+ user-role network-operator
+ idle-timeout 0 0
+#
+line con 0
+ user-role network-admin
+ idle-timeout 0 0
+#
+line vty 0 15
+ authentication-mode scheme
+ user-role network-operator
+#
+line vty 16 63
+ user-role network-operator
+#
+ ip route-static 0.0.0.0 0 192.168.56.1
+#
+ ssh server enable
+#
+domain name system
+#
+ domain default enable system
+#
+role name level-0
+ description Predefined level-0 role
+#
+role name level-1
+ description Predefined level-1 role
+#
+role name level-2
+ description Predefined level-2 role
+#
+role name level-3
+ description Predefined level-3 role
+#
+role name level-4
+ description Predefined level-4 role
+#
+role name level-5
+ description Predefined level-5 role
+#
+role name level-6
+ description Predefined level-6 role
+#
+role name level-7
+ description Predefined level-7 role
+#
+role name level-8
+ description Predefined level-8 role
+#
+role name level-9
+ description Predefined level-9 role
+#
+role name level-10
+ description Predefined level-10 role
+#
+role name level-11
+ description Predefined level-11 role
+#
+role name level-12
+ description Predefined level-12 role
+#
+role name level-13
+ description Predefined level-13 role
+#
+role name level-14
+ description Predefined level-14 role
+#
+user-group system
+#
+local-user admin class manage
+ password hash $h$6$fagmX8g612a3V8s6$nHYR3zpA9bRuyjNSNBBKDqO3fHqtnEvPijhs4ZqhhP8vP93qY6Va+ktVC55Dd3vfPCuOtcKAdz/U2ImBxHz7gQ==
+ service-type ssh
+ authorization-attribute user-role network-admin
+ authorization-attribute user-role network-operator
+#
+public-key peer 127.0.0.1
+ public-key-code begin
+   30819F300D06092A864886F70D010101050003818D0030818902818100AB9D38EA044BEBE1
+   B996F4C672FBE4820E1E52211BAC4574AACE6D1A151B6431B93C4370018A581002D054FCB3
+   0FC4F2A8ACFA90F24D0931A10049A3BDE575BE758AA7E3B20FBCA90A1FEC6EEC04DCDA012A
+   F253BB09A2B72A8F74B5551925B8FB3EF856F745632FF5109C55C4AAD2B45EFE2C35BA33A9
+   E68D7BA7D084CF0FC10203010001
+ public-key-code end
+ peer-public-key end
+#
+return
