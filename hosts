@@ -1,8 +1,12 @@
 [asw]
 asw1 ansible_host=192.168.56.101 password=admin
-
-
+asw2 passwd=passwd user=user
+[csw]
+192.168.56.103 hahaha=a
+[csw:vars]
+testvar=testvar
 
 [all:vars]
 username=admin
 platform=hp_comware
+ntp_server=1.1.1.1

@@ -1,5 +1,5 @@
 ---
-r1:
+router1:
   username: admin
   password: admin
   platform: hp_comware

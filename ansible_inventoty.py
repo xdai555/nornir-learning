@@ -1,32 +1,48 @@
 # 将 Ansible 迁移到 Nornir，加载主机文件时用到 AnsibleInventory 插件
+# Migrating Ansible to Nornir, using AnsibleInventory plugin when loading host files
 from nornir import InitNornir
-from nornir.plugins.inventory.ansible import AnsibleInventory
-from some_tasks import backup_config,process_tasks
+# from nornir.plugins.inventory.ansible import AnsibleInventory
+from plugins.tasks.some_tasks import backup_config,process_tasks
 from nornir.plugins.functions.text import print_result,print_title
-from nornir.core.exceptions import NornirSubTaskError,NornirExecutionError
+from pprint import pprint
 
 
-nr =InitNornir(config_file="./myconfig.yaml")
-test = nr.run(task=backup_config)
-# import ipdb; ipdb.set_trace()
-process_tasks(test,verbose=True)
+# Notice: options-hostsfile, not the default ``host_file``
+nr = InitNornir(
+    inventory={
+        "plugin": "nornir.plugins.inventory.ansible.AnsibleInventory",
+        "options": {
+            "hostsfile": "hosts",
+        }
+    }
+)
+import ipdb; ipdb.set_trace()
+# test = nr.run(task=backup_config)
+# process_tasks(test)
+
+
 
 """
-通过 ipdb 进行追踪调试
+# use ipdb to dive into hosts's variables
 ipdb> pp nr.inventory.hosts                                                                                                          
-{'asw1': Host: asw1,
- 'asw2': Host: asw2,
- 'csw1': Host: csw1,
- 'csw2': Host: csw2,
- 'dsw1': Host: dsw1,
- 'dsw2': Host: dsw2}
+{'192.168.56.103': Host: 192.168.56.103, 'asw1': Host: asw1, 'asw2': Host: asw2}
 ipdb> pp nr.inventory.groups                                                                                                         
-{'asw': Group: asw, 'csw': Group: csw, 'dsw': Group: dsw}
+{'asw': Group: asw, 'csw': Group: csw}
 
-查看主机变量，使用data无法查看到全局变量
-ipdb> pp nr.inventory.hosts['csw1'].data                                                                                             
-{'pass': 'passwd', 'user': 'admin'}
-但是可以通过items()看到全部的变量
-ipdb> pp nr.inventory.hosts['csw1'].items()                                                                                          
-dict_items([('user', 'admin'), ('pass', 'passwd'), ('ntp', '1.1.1.1')])
+# ``.data`` can show host vars ,but can not show gloable vars(defined in [all:vars])
+ipdb> pp nr.inventory.hosts['asw2'].data                                                                                             
+{'passwd': 'passwd', 'user': 'user'}
+# ``.items()`` can show all vars
+ipdb> pp nr.inventory.hosts['asw2'].items()                                                                                          
+dict_items([('passwd', 'passwd'), ('user', 'user'), ('ntp_server', '1.1.1.1')])
+# some connection variables have fixed key(username,password,port),use`.`method.
+ipdb> nr.inventory.hosts['asw2'].username                                                                                            
+'admin'
+ipdb> nr.inventory.hosts['asw2']. 
+  close_connection()          dict()                      has_parent_group()          password                     
+  close_connections()         get()                       hostname                    platform                     
+  connection_options          get_connection()            items()                     port                         
+  connections                 get_connection_parameters() keys()                      username                    >
+  data                        get_connection_state()      name                        values()                     
+  defaults                    groups                      open_connection()           .git/   
 """

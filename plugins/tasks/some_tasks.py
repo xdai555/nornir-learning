@@ -56,7 +56,7 @@ def process_tasks(task, verbose=False):
         task.raise_on_error()
     else:
         for i,j in task.failed_hosts.items():
-            print(f"{i}\t{j}")
+            print(f"Task {task.name} has the following errors:\n{i} {j}")
 
 
 if __name__ == "__main__":

@@ -5,8 +5,6 @@ from nornir.plugins.functions.text import print_result
 
 command = input('Pls input the commands splited by comma:')
 cmds = command.split(',')
-def a(b):
-    b,
 
 for cmd in cmds:
     nr = InitNornir()
@@ -14,7 +12,7 @@ for cmd in cmds:
         task=netmiko_send_command,
         command_string=cmd,
     )
-    # import ipdb; ipdb.set_trace()
+    import ipdb; ipdb.set_trace()
     print_result(result)
 
 """
