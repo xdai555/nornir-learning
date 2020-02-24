@@ -1,5 +1,5 @@
 
-import sys,pathlib
+import sys,pathlib,re
 from nornir.plugins.functions.text import print_result
 from nornir.plugins.tasks.text import template_file
 from nornir.plugins.tasks.files import write_file
@@ -28,7 +28,7 @@ def render_config(task):
     )
 
 
-def backup_config(task):
+def backup_running_config(task):
     # 创建存放备份配置的目标文件夹
     pathlib.Path("backup_config").mkdir(exist_ok=True)
     # 执行dis cur命令，用户需要 screen-length disable 权限
@@ -45,6 +45,16 @@ def backup_config(task):
         content=r.result
     )
 
+def parse_vpn_instance():
+    pass    
+
+
+def backup_startup_config(task):
+    """
+    Parse startup file name and put it into server.
+    """
+
+    pass
 
 def process_tasks(task, verbose=False):
     """
@@ -52,10 +62,12 @@ def process_tasks(task, verbose=False):
     """
     if not task.failed:
         print(f"Task {task.name} completed successfully!")
-    if verbose:
-        task.raise_on_error()
-    else:
-        for i,j in task.failed_hosts.items():
+    for i,j in task.failed_hosts.items():
+        if verbose:
+            for fail in j:
+                print("#"*15 + f" {task.name} for {i} error "  + "#"*15)
+                print(fail.result)
+        else:
             print(f"Task {task.name} has the following errors:\n{i} {j}")
 
 

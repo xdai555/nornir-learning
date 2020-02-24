@@ -1,7 +1,7 @@
 from nornir import InitNornir
 from nornir.plugins.tasks.networking import netmiko_send_command
 from nornir.plugins.functions.text import print_result
-
+from nornir.core.filter import F
 
 command = input('Pls input the commands splited by comma:')
 cmds = command.split(',')
@@ -12,8 +12,17 @@ for cmd in cmds:
         task=netmiko_send_command,
         command_string=cmd,
     )
-    import ipdb; ipdb.set_trace()
-    print_result(result)
+    root=[]
+    # import ipdb; ipdb.set_trace()
+    for i, u in result.items():
+        if "GE0/1" in u[0].result:
+            root.append(i)
+            print(True)
+        print(root)
+for host in root:
+    nr_root = nr.filter(F(name__contains=f"{host}"))
+    print(nr_root.inventory.hosts)
+
 
 """
 通过 ipdb 进行追踪，查看结果对象

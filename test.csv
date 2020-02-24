@@ -1,4 +1,5 @@
 ﻿host,username,password,device_type,device_name
-10.10.1.10,wlyj,yj$10,hp_comware,IDC-核心交换机-HS125X-5
-10.10.66.27,wlyj,yj$27,hp_comware,IDC-接入交换机-HS5560-7
-10.10.66.22,wlyj,yj$22,hp_comware,IDC-接入交换机-HS5560-2
+192.168.56.101,admin,admin,hp_comware,Test-1
+192.168.56.101,admin,admin,hp_comware,Test-2
+192.168.56.102,admin,admin,hp_comware,Test-3
+192.168.56.102,admin,wrong,hp_comware,Fail-test
