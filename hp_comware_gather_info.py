@@ -30,7 +30,7 @@ process_tasks(t,verbose=True)
 """
 1、将该脚本及项目文件夹 plugins 放到同级目录
 2、设备信息为CSV格式，且表头需包含'host', 'username', 'password', 'device_type', 'device_name'
-3、运行之后，按提示输入命令，设备用户需要有screen-dis及dis cur 权限
+3、运行之后，按提示输入命令，设备用户需要有screen-dis及dis权限
 4、会按设备名写入到 backup_config 文件夹
 5、失败的主机会显示出来，可手动进行重试，或用 verbose 查看具体原因
 """
