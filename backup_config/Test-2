@@ -1,4 +1,0 @@
-  Type: S-Static   D-Dynamic   O-Openflow   R-Rule   M-Multiport  I-Invalid
-IP address       MAC address    SVLAN/VSI Interface/Link ID        Aging Type  
-192.168.56.1     0800-2700-b853 --        GE0/1                    2     D     
-192.168.56.102   8acb-e76c-0302 --        GE0/1                    16    D     
