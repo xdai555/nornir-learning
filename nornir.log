@@ -8333,3 +8333,457 @@ TypeError: 'module' object is not callable
 2020-02-26 23:17:49,533 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis ver', 'parse': False, 'all_in_one': False} on 6 hosts
 2020-02-26 23:18:38,883 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis version', 'parse': False, 'all_in_one': False} on 6 hosts
 2020-02-26 23:23:49,144 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis version', 'parse': False, 'all_in_one': False} on 6 hosts
+2020-02-29 15:53:45,917 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 6 hosts
+2020-02-29 15:55:22,898 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 6 hosts
+2020-02-29 15:56:57,983 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 16:00:23,101 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 16:20:51,990 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': False} on 2 hosts
+2020-02-29 16:31:29,843 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 16:33:51,398 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 16:34:44,089 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 16:48:33,102 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 16:49:14,116 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 16:54:14,417 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 17:25:32,552 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 17:28:48,397 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 17:29:36,525 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 17:38:05,136 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 17:39:00,406 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 18:14:55,341 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp cou', 'parse': True} on 2 hosts
+2020-02-29 18:17:55,535 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp cou', 'parse': True} on 2 hosts
+2020-02-29 18:18:34,919 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp cou', 'parse': True} on 2 hosts
+2020-02-29 18:21:02,261 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp cou', 'parse': True} on 2 hosts
+2020-02-29 18:31:36,348 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp cou', 'parse': True} on 2 hosts
+2020-02-29 18:34:38,498 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp cou', 'parse': True} on 2 hosts
+2020-02-29 20:48:11,449 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 20:49:28,141 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 20:52:18,701 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 21:35:06,323 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 21:36:33,482 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 21:38:14,993 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 21:42:24,021 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 22:11:40,694 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 22:14:51,960 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 22:22:44,398 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 22:23:41,877 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 22:25:30,568 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 22:26:27,762 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 22:27:33,662 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 22:36:58,596 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 22:37:48,917 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 23:18:45,520 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 23:20:18,802 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 23:20:59,960 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 23:23:20,165 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 7 hosts
+2020-02-29 23:23:20,827 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'Gathering Test-wrong1 192.168.56.102' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 884, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/ssh_dispatcher.py", line 246, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 897, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect hp_comware 192.168.56.102:22
+Authentication failed.
+
+2020-02-29 23:23:20,828 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong2': task 'Gathering Test-wrong2 192.168.56.102' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 884, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/ssh_dispatcher.py", line 246, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 897, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect hp_comware 192.168.56.102:22
+Authentication failed.
+
+2020-02-29 23:23:20,828 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'gather_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/nornir-learning/plugins/tasks/gather_info.py", line 18, in gather_info
+    use_textfsm=parse,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 147, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: <function netmiko_send_command at 0x7f25e4ce8290> (failed)
+
+
+2020-02-29 23:23:20,828 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong2': task 'gather_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/nornir-learning/plugins/tasks/gather_info.py", line 18, in gather_info
+    use_textfsm=parse,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 147, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: <function netmiko_send_command at 0x7f25e4ce8290> (failed)
+
+
+2020-02-29 23:26:48,050 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 7 hosts
+2020-02-29 23:26:48,641 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'Gathering Test-wrong1 192.168.56.102' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 884, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/ssh_dispatcher.py", line 246, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 897, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect hp_comware 192.168.56.102:22
+Authentication failed.
+
+2020-02-29 23:26:48,642 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'gather_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/nornir-learning/plugins/tasks/gather_info.py", line 18, in gather_info
+    use_textfsm=parse,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 147, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: <function netmiko_send_command at 0x7fe34d228290> (failed)
+
+
+2020-02-29 23:26:48,645 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong2': task 'Gathering Test-wrong2 192.168.56.102' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 884, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/ssh_dispatcher.py", line 246, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 897, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect hp_comware 192.168.56.102:22
+Authentication failed.
+
+2020-02-29 23:26:48,646 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong2': task 'gather_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/nornir-learning/plugins/tasks/gather_info.py", line 18, in gather_info
+    use_textfsm=parse,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 147, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: <function netmiko_send_command at 0x7fe34d228290> (failed)
+
+
+2020-02-29 23:28:00,251 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 7 hosts
+2020-02-29 23:28:01,084 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'Gathering Test-wrong1 192.168.56.102' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 884, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/ssh_dispatcher.py", line 246, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 897, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect hp_comware 192.168.56.102:22
+Authentication failed.
+
+2020-02-29 23:28:01,087 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'gather_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/nornir-learning/plugins/tasks/gather_info.py", line 18, in gather_info
+    use_textfsm=parse,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 147, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: <function netmiko_send_command at 0x7f4ceefa8290> (failed)
+
+
+2020-02-29 23:28:01,105 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong2': task 'Gathering Test-wrong2 192.168.56.102' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 884, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/ssh_dispatcher.py", line 246, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 897, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect hp_comware 192.168.56.102:22
+Authentication failed.
+
+2020-02-29 23:28:01,106 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong2': task 'gather_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/nornir-learning/plugins/tasks/gather_info.py", line 18, in gather_info
+    use_textfsm=parse,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 147, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: <function netmiko_send_command at 0x7f4ceefa8290> (failed)
+
+
+2020-02-29 23:33:30,303 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 1 hosts
+2020-02-29 23:33:30,446 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'Gathering Test-wrong1 192.168.56.102' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 884, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/ssh_dispatcher.py", line 246, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 897, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect hp_comware 192.168.56.102:22
+Authentication failed.
+
+2020-02-29 23:33:30,447 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'gather_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/nornir-learning/plugins/tasks/gather_info.py", line 18, in gather_info
+    use_textfsm=parse,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 147, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: <function netmiko_send_command at 0x7f83673e8290> (failed)
+
+
+2020-02-29 23:48:52,821 -  nornir.core -     INFO -        run() - Running task 'gather_info' with args {'cmd': 'dis arp', 'parse': True} on 2 hosts
+2020-02-29 23:48:53,031 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'Gathering Test-wrong1 192.168.56.102' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 884, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 446, in connect
+    passphrase,
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 764, in _auth
+    raise saved_exception
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/client.py", line 751, in _auth
+    self._transport.auth_password(username, password)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/transport.py", line 1509, in auth_password
+    return self.auth_handler.wait_for_response(my_event)
+  File "/home/eric/.local/lib/python3.7/site-packages/paramiko/auth_handler.py", line 250, in wait_for_response
+    raise e
+paramiko.ssh_exception.AuthenticationException: Authentication failed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/tasks/networking/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection("netmiko", task.nornir.config)
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 302, in get_connection
+    extras=conn.extras,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/inventory.py", line 352, in open_connection
+    configuration=configuration,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/plugins/connections/netmiko.py", line 58, in open
+    self.connection = ConnectHandler(**parameters)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/ssh_dispatcher.py", line 246, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 317, in __init__
+    self._open()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 322, in _open
+    self.establish_connection()
+  File "/home/eric/.local/lib/python3.7/site-packages/netmiko/base_connection.py", line 897, in establish_connection
+    raise NetMikoAuthenticationException(msg)
+netmiko.ssh_exception.NetMikoAuthenticationException: Authentication failure: unable to connect hp_comware 192.168.56.102:22
+Authentication failed.
+
+2020-02-29 23:48:53,032 - nornir.core.task -    ERROR -      start() - Host 'Test-wrong1': task 'gather_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 85, in start
+    r = self.task(self, **self.params)
+  File "/home/eric/nornir-learning/plugins/tasks/gather_info.py", line 18, in gather_info
+    use_textfsm=parse,
+  File "/home/eric/.local/lib/python3.7/site-packages/nornir/core/task.py", line 147, in run
+    raise NornirSubTaskError(task=task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: <function netmiko_send_command at 0x7f40395e8290> (failed)
+
+

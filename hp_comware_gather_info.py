@@ -1,5 +1,5 @@
 from nornir import InitNornir
-from plugins.tasks import gather_info,process_tasks
+from plugins.tasks import gather_info,process_tasks,parse_to_excel
 import os,pathlib
 
 
@@ -24,8 +24,10 @@ nr = InitNornir(
 
 
 cmd = input('Input the command:')
-t = nr.run(gather_info, cmd=cmd)
+t = nr.run(gather_info, cmd=cmd, parse=True)
 process_tasks(t,verbose=True)
+parse_to_excel(t,all_in_one=False)
+
 
 """
 1、将该脚本及项目文件夹 plugins 放到同级目录
