@@ -1,3 +1,7 @@
 ﻿host,username,password,device_type,device_name
 192.168.56.102,admin,wrong,hp_comware,Test-wrong1
-192.168.56.102,admin,admin,hp_comware,Test-2
+192.168.56.102,admin,wrong,hp_comware,Test-wrong3
+192.168.56.101,admin,admin,hp_comware,Test-0001
+192.168.56.102,admin,wrong,hp_comware,Test-wrong2
+192.168.56.101,admin,wrong,hp_comware,Test-wrong4
+192.168.56.102,admin,admin,hp_comware,Test-0002
