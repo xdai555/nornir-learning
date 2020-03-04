@@ -1,5 +1,5 @@
 ---
 inventory:
-  plugin: "plugins.inventory.csv_inventory.CsvInventory"
+  plugin: "plugins.inventory.csv_inventory.CustomInventory"
   options:
-    csv_file: "test.csv"
+    filename: "test.csv"

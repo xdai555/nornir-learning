@@ -31,3 +31,6 @@ import threading
 #     bb.to_excel(writer,sheet_name="192.168.56.2",index=False)
     
     # writer.save()
+filename = "test.csv"
+if ".csv" in filename:
+    print(True)
