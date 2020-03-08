@@ -62,7 +62,7 @@ def parse_to_excel(task,one_sheet=False):
             if len(info) != 1:
                 pathlib.Path("gather_info").mkdir(exist_ok=True)
                 with open(f'./gather_info/{hostname}.log','w') as f:
-                    f.write(info)
+                    f.write("\n\n" + f" {cmd} ".center(66,"#") + "\n" + info)
             else:
                 pass
         else:

@@ -22,7 +22,8 @@ def gather_info(task,cmd,parse=False):
         w = task.run(
             task=write_file,
             filename=f"gather_info/{task.host.name}.log",
-            content=r.result
+            content="\n\n" + f" {cmd} ".center(66,"#") + "\n" + r.result,
+            append=True,
         )
         if not w.failed:
             print(f"{r.name} completed successfully!")

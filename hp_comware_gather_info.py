@@ -15,7 +15,8 @@ nr = InitNornir(
 )
 
 
-cmd = input("Input the command:")
+commands = input("Input commands(comma-separated):")
+cmds = commands.split(',')
 parse = input("Parse output to Excel?(Y/N)")
 if "y" in parse.lower():
     parse = True
@@ -28,13 +29,12 @@ if "y" in parse.lower():
 else:
     parse = False
 
-t = nr.run(gather_info, cmd=cmd, parse=parse)
-
-process_tasks(t,verbose=False)
-
-# 如果需要放到同一个sheet页,修改one_sheet = True
-if parse:
-    parse_to_excel(t,one_sheet=False)
+for cmd in cmds:
+    t = nr.run(gather_info, cmd=cmd, parse=parse)
+    process_tasks(t,verbose=False)
+    # 如果需要放到同一个sheet页,修改one_sheet = True
+    if parse:
+        parse_to_excel(t,one_sheet=False)
 
 
 """
