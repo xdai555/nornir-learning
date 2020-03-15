@@ -37,11 +37,14 @@ pip install xlrd
 2. `process_tasks(t,verbose=False)` : 修改verbose=True 可以显示任务执行中的详细错误信息
 3. `parse_to_excel(t,one_sheet=False)`: 修改one_sheet=True 可以将收集到的所有信息保存到同一个 excel sheet 页中
 
-#### 使用自定义系统环境变量
+#### 设置系统环境变量（自定义需求使用）
 
-如果要解析输出，需要自行脚本中修改系统环境变量。
+~~如果要解析输出，需要自行脚本中修改系统环境变量。~~
 
-##### HPE Comware
+目前`hp_comware`相关的 TextFSM 大部分已合并到 [ntc-templates](https://github.com/networktocode/ntc-templates)，并且`pip install ntc-templates`后， Netmiko 会为自动在`~/ntc-template/templates/index`中查找 ntc-templates 索引文件，默认不用手工配置（仅针对 Linux）。  
+原理上`netmiko`和`ntc-templates`都支持的设备型号及对应命令，都可以用本脚本进行解析输出。
+
+如果需要测试或自定义解析模板文件，仍可参考`textfsm_hpe_cmw7`使用：
 
 下载 [textfsm_hpe_cmw7](https://github.com/odai5/textfsm_hpe_cmw7) 中的 `templates` 文件夹保存到本地。
 
@@ -63,6 +66,7 @@ export NET_TEXTFSM=/path/to/textfsm_hpe_cmw7/templates/
 
 ## 小脚本更新记录
 
+2020/03/15：更新Readme，`textfsm_hpe_cmw7`已弃用  
 2020/03/08：优化`gather_info`保存输出到文件功能，修改为追加模式并写入执行的命令，用来区分多次执行的结果；`hp_comware_gather_info.py`增加多条命令支持，可一次性收集多条信息  
 2020/03/04: 更新主机插件，现在可支持 csv 和 excel 文件  
 2020/03/02: 更新`parse_to_excel`，可以将所有输出保存在同一个 sheet 页中  
