@@ -9,7 +9,7 @@ import pandas as pd
 from openpyxl import load_workbook
 import openpyxl,os
 import threading
-
+from plugins.tasks.napalm_compare_config import napalm_compare_config as compare_config
 # nr = InitNornir()
 # import ipdb; ipdb.set_trace()
 # alist = list(range(1,10000))
@@ -31,6 +31,10 @@ import threading
 #     bb.to_excel(writer,sheet_name="192.168.56.2",index=False)
     
     # writer.save()
-filename = "test.csv"
-if ".csv" in filename:
-    print(True)
+# filename = "test.csv"
+# if ".csv" in filename:
+#     print(True)
+nr = InitNornir()
+print(nr.inventory.hosts)
+result = nr.run(task=compare_config)
+print(result['r1'][-1])

@@ -6,8 +6,9 @@ nr = InitNornir(
     inventory = {
         "plugin": "plugins.inventory.custom_inventory.CustomInventory",
         "options": {
-            "filename": "test.xlsx",
+            "filename": "hosts_example.xlsx",
         }
     }
 )
 pprint(nr.inventory.hosts)
+print(nr.inventory.groups)
