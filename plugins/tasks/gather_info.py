@@ -1,8 +1,6 @@
-import pathlib,os,openpyxl
+import pathlib
 from nornir.plugins.tasks.files import write_file
 from nornir.plugins.tasks.networking import netmiko_send_command
-import pandas as pd
-from nornir.core.task import Task
 
 
 def gather_info(task,cmd,parse=False):

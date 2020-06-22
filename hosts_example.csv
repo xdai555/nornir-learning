@@ -1,7 +1,6 @@
-﻿host,username,password,device_type,device_name
-192.168.56.102,admin,wrong,hp_comware,Test-wrong1
-192.168.56.102,admin,wrong,hp_comware,Test-wrong3
-192.168.56.101,admin,admin,hp_comware,Test-0001
-192.168.56.102,admin,wrong,hp_comware,Test-wrong2
-192.168.56.101,admin,wrong,hp_comware,Test-wrong4
-192.168.56.102,admin,admin,hp_comware,Test-0002
+﻿host,username,password,device_type,device_name,groups,secret
+192.168.56.102,admin,wrong,hp_comware,Test-wrong1,acc,cisco
+192.168.56.102,admin,wrong,hp_comware,Test-wrong3,acc,cisco
+192.168.56.101,admin,wrong,hp_comware,Test-wrong4,agg,cisco
+192.168.56.102,admin,admin,hp_comware,Test-0002,agg,cisco
+10.1.1.10,cisco,cisco,ios,test-cisco,acc,cisco

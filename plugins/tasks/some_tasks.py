@@ -1,6 +1,7 @@
 from nornir.plugins.tasks.files import write_file
 from nornir.core.task import Task
-import sys,pathlib,re,os,time,openpyxl
+import sys,pathlib,re,os,time
+# import openpyxl
 import pandas as pd
 
 

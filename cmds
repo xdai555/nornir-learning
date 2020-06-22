@@ -1,0 +1,5 @@
+[acc]
+show run | sec aaa
+show arp
+[agg]
+show mac
