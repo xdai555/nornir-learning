@@ -1,6 +1,8 @@
 from nornir.core.deserializer.inventory import Inventory
 import pandas as pd
 import configparser
+from nornir.core.inventory import ConnectionOptions
+
 
 class CustomInventory(Inventory):
     def __init__(self, **kwargs):
@@ -18,8 +20,7 @@ class CustomInventory(Inventory):
     def get_file_content(self, filename: str):
         # df : This host format can be used in netmiko directly.
         if ".csv" in filename.lower():
-            df = pd.read_csv(filename)[['host', 'username', 'password', 'device_type', 'device_name', 'groups', 'secret']].\
-                to_dict(orient='records')
+            df = pd.read_csv(filename)[['host', 'username', 'password', 'device_type', 'device_name', 'groups', 'secret']].fillna("").to_dict(orient='records')
         else:
             df = pd.read_excel(filename)[['host', 'username', 'password', 'device_type', 'device_name', 'groups', 'secret']].\
                 to_dict(orient='records')
@@ -38,14 +39,12 @@ class CustomInventory(Inventory):
                         'username': item["username"],
                         'groups': [item["groups"], ],
                         'connection_options':{
-                            item["device_type"]:{
+                            "netmiko":{
                                 "extras": {
-                                    "optional_args": {
-                                        "secret": item["secret"]
-                                    }
+                                        "secret": item["secret"],   
                                 }
                             }
-                                              },
+                            },
                         }
                 }
             hosts.update(host)

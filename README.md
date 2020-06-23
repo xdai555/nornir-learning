@@ -62,10 +62,11 @@ export NET_TEXTFSM=/path/to/textfsm_hpe_cmw7/templates/
 
 ## 有什么用？
 
-专业网工，业余写脚本，重复造轮子！！！
+专业网工，业余写脚本，造轮子！！！
 
 ## 小脚本更新记录
 
+2020/06/23: 更新`custom_inventory.py`，添加`groups`及 `groups->data->cmds` 字段，可以根据分组，执行不同的命令
 2020/03/15：更新Readme，`textfsm_hpe_cmw7`已弃用  
 2020/03/08：优化`gather_info`保存输出到文件功能，修改为追加模式并写入执行的命令，用来区分多次执行的结果；`hp_comware_gather_info.py`增加多条命令支持，可一次性收集多条信息  
 2020/03/04: 更新主机插件，现在可支持 csv 和 excel 文件  

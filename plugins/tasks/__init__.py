@@ -3,6 +3,7 @@ from .gather_info import gather_info
 from .render_config import render_config
 from .some_tasks import process_tasks
 from .some_tasks import parse_to_excel
+from .send_config import config
 
 __all__ = (
     "backup_running_config",
@@ -10,5 +11,6 @@ __all__ = (
     "render_config",
     "process_tasks",
     "parse_to_excel",
+    "config",
 
 )
