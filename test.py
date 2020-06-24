@@ -1,5 +1,6 @@
 from tqdm import tqdm
 from time import sleep
+import time,pathlib
 from nornir import InitNornir
 from nornir.plugins.inventory.simple import SimpleInventory
 from nornir.plugins.connections.netmiko import Netmiko
@@ -34,7 +35,7 @@ from plugins.tasks.napalm_compare_config import napalm_compare_config as compare
 # filename = "test.csv"
 # if ".csv" in filename:
 #     print(True)
-nr = InitNornir()
-print(nr.inventory.hosts)
-result = nr.run(task=compare_config)
-print(result['r1'][-1])
+# nr = InitNornir()
+# print(nr.inventory.hosts)
+# result = nr.run(task=compare_config)
+# print(result['r1'][-1])
